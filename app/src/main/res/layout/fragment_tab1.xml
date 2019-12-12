@@ -29,6 +29,7 @@
                 android:id="@+id/imageviewid"
                 android:src="@drawable/ic_image_black_24dp"
                 android:background="#F0F0E6"
+
                 >
 
             </ImageView>
@@ -59,7 +60,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/nameEdittextId"
+                android:id="@+id/eventnameEdittextId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
@@ -115,9 +116,10 @@
                 android:id="@+id/descriptionId"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-
+                android:gravity="top"
                 android:background="@drawable/rect_edittext"
                 android:padding="12dp"
+                android:inputType="text|textMultiLine"
                 android:layout_marginTop="10dp"
 
                 >
@@ -163,7 +165,8 @@
                 android:background="@drawable/rect_edittext"
                 android:padding="12dp"
                 android:drawablePadding="7dp"
-
+                android:focusableInTouchMode="true"
+                android:focusable="true"
                 android:layout_marginTop="10dp"
 
 
@@ -177,8 +180,11 @@
                     android:drawablePadding="7dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:background="@drawable/rect_edittext"
                     android:padding="12dp"
+
                     android:inputType=""
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
@@ -214,6 +220,8 @@
                     android:layout_width="wrap_content"
                     android:drawableEnd="@drawable/ic_date_range_black_24dp"
                     android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:background="@drawable/rect_edittext"
                     android:padding="12dp"
                     android:drawablePadding="7dp"
@@ -227,6 +235,8 @@
 
                 <TextView
                     android:id="@+id/timeEndid"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:drawableEnd="@drawable/ic_access_time_black_24dp"
                     android:drawablePadding="7dp"
                     android:layout_width="wrap_content"
